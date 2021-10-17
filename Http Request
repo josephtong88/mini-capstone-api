@@ -13,7 +13,7 @@ content-type: application/json
 {
   "input_name": "water",
   "input_price": 123123,
-  "input_imagine_url": "someurlhere",
+  "input_image_url": "someurlhere",
   "input_description": "wtfisthis"
 }
 
@@ -24,7 +24,7 @@ Content-Type: application/json
 {
   "name" : "candy",
   "price": 4,
-  "imagine_url":"https://gray-kolo-prod.cdn.arcpublishing.com/resizer/f2ziEEMl1AGELE6RtJCrf2OZjF8=/1200x675/smart/filters:quality(85)/cloudfront-us-east-1.images.arcpublishing.com/gray/OAUOKBIYQFHBZDORWALEQ5GYIE.jpg",
+  "image_url":"https://gray-kolo-prod.cdn.arcpublishing.com/resizer/f2ziEEMl1AGELE6RtJCrf2OZjF8=/1200x675/smart/filters:quality(85)/cloudfront-us-east-1.images.arcpublishing.com/gray/OAUOKBIYQFHBZDORWALEQ5GYIE.jpg",
   "description": "it's hot"
 }
 

@@ -13,7 +13,7 @@ class ProductsController < ApplicationController
     product = Product.new(
       name: params[:input_name],
       price: params[:input_price],
-      imagine_url: params[:input_imagine_url],
+      image_url: params[:input_image_url],
       description: params[:description],
     )
     product.save
@@ -25,15 +25,15 @@ class ProductsController < ApplicationController
     product = Product.find_by(id: the_id)
     product.name = params[:name] || product.name
     product.price = params[:price] || product.price
-    product.imagine_url = params[:imagine_url] || product.imagine_url
+    product.image_url = params[:image_url] || product.image_url
     product.description = params[:description] || product.description
     product.save
     render json: product.as_json
   end
 
   def destroy
-    product = Product.find_by(id: params[:id])  
-  product.destroy
-  render json: {message: "The product has been destroyed"}
+    product = Product.find_by(id: params[:id])
+    product.destroy
+    render json: { message: "The product has been destroyed" }
   end
 end
