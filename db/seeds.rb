@@ -5,7 +5,6 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-100.times do
-  product = Product.new(name: Faker::Game.title, description: Faker::Game.genre, image_url: Faker::LoremFlickr.image, price: Faker::Commerce.price)
-  product.save
-end
+
+product = Product.new(name: Faker::Game.title, description: Faker::Game.genre, image_url: Faker::LoremFlickr.image, price: Faker::Commerce.price)
+product.save
