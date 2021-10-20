@@ -14,10 +14,10 @@ class ProductsController < ApplicationController
       name: params[:input_name],
       price: params[:input_price],
       image_url: params[:input_image_url],
-      description: params[:description],
+      description: params[:input_description],
     )
     product.save
-    render json: product.as_json
+    render json: product
   end
 
   def update
@@ -28,7 +28,7 @@ class ProductsController < ApplicationController
     product.image_url = params[:image_url] || product.image_url
     product.description = params[:description] || product.description
     product.save
-    render json: product.as_json
+    render json: product
   end
 
   def destroy
