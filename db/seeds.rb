@@ -9,5 +9,7 @@
 # product = Product.new(name: Faker::Game.title, description: Faker::Game.genre, image_url: Faker::LoremFlickr.image, price: Faker::Commerce.price)
 # product.save
 
-supplier = Supplier.new(name: "walgreens", email: "wal@greens.com", phone_number: "123-555-1234")
-supplier.save
+# supplier = Supplier.new(name: "walgreens", email: "wal@greens.com", phone_number: "123-555-1234")
+# supplier.save
+
+ImageUrl.create(url: "testurl")
