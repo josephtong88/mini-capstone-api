@@ -43,4 +43,6 @@ Content-Type: application/json
   "password_confirmation": "password"
 }
 
- 
+###
+
+POST http://localhost:3000/orders
