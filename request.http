@@ -46,3 +46,19 @@ Content-Type: application/json
 ###
 
 POST http://localhost:3000/orders
+content-type: application/json
+
+{
+  "input_user_id": 2,
+  "input_product_id": 2,
+  "input_quantity": 2,
+  "input_subtotal":2,
+  "input_tax":2,
+  "input_total":2
+}
+
+###
+GET http://localhost:3000/showorder/1
+
+###
+GET http://localhost:3000/orders
