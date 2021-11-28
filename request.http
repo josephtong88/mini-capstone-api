@@ -11,8 +11,8 @@ POST http://localhost:3000/products
 content-type: application/json
 
 {
-  "input_name": "new car",
-  "input_price": 123123,
+  "input_name": "New Car",
+  "input_price": 10000,
   "input_image_url": "someurlhere",
   "input_description": "this is a brand new civic"
 }
